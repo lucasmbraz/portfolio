@@ -13,6 +13,8 @@ dependencies:
 
   cupertino_icons: ^1.0.2
 
+  flutter_svg: ^2.0.0+1
+
   design_system: 
     path: packages/design_system
 
@@ -25,3 +27,6 @@ dev_dependencies:
 flutter:
 
   uses-material-design: true
+
+  assets:
+    - assets/
