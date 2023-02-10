@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:design_system/design_system.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:portfolio/theme_mode/theme_mode_notifier.dart';
 
 class Header extends StatelessWidget {
   const Header({super.key});
@@ -17,9 +18,12 @@ class Header extends StatelessWidget {
         const SizedBox(width: 30),
         DsText.body18('Contact'),
         const SizedBox(width: 30),
-        SvgPicture.asset(
-          'assets/sun.svg',
-          colorFilter: ColorFilter.mode(context.spColors.body, BlendMode.srcIn),
+        InkWell(
+          onTap: () => appTheme.switchTheme(),
+          child: SvgPicture.asset(
+            'assets/sun.svg',
+            colorFilter: ColorFilter.mode(context.spColors.body, BlendMode.srcIn),
+          ),
         ),
       ],
     );
