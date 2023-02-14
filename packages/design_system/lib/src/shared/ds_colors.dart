@@ -18,6 +18,10 @@ class DsColors {
 
   final DsColor background;
   final DsColor body;
+
+  static const DsColor lightBlue = DsColor._(0xFF33D2FF);
+  static const DsColor pink = DsColor._(0xFFDD5789);
+  static const DsColor purple = DsColor._(0xFF9845E8);
 }
 
 class DsColor extends Color {
