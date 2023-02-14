@@ -24,12 +24,12 @@ class Hello extends StatelessWidget {
         ),
         const Expanded(child: SizedBox(height: 28)),
         Row(
-          children: [
-            ElevatedButton(onPressed: () {}, child: const Text('Send an email')),
-            const SizedBox(width: 10),
-            ElevatedButton(onPressed: () {}, child: const Text('LinkedIn')),
-            const SizedBox(width: 10),
-            ElevatedButton(onPressed: () {}, child: const Text('Github')),
+          children: const [
+            DsButton.email(),
+            SizedBox(width: 10),
+            DsButton.linkedIn(),
+            SizedBox(width: 10),
+            DsButton.github(),
           ],
         ),
         const SizedBox(height: 56),
